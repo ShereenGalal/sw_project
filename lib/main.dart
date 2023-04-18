@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'screens/Hello.dart';
-void main() => runApp(MyApp());
+void main() => runApp(Sakny());
 
-class MyApp extends StatelessWidget {
+class Sakny extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: Colors.white,
-          indicatorColor: Colors.orange.shade700,
+          indicatorColor: Color(0xffb56d0f),
         ),
       ),
       home:  Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/homePageLabels.dart';
 import '../models/apartment.dart';
 import '../models/rooms.dart';
 class Home extends StatefulWidget {
@@ -55,26 +56,10 @@ class _HomeState extends State<Home> {
                   ))
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "المزيد",
-                      style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w900),
-                    )),
-                const Text(
-                  "العروض ",
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900),
-                ),
-              ],
-            ),
+          homePageLable(
+            more: "المزيد",
+            deals: "العروض",
+            onPressed: (){},
           ),
           Container(
             height: 200,
@@ -165,26 +150,10 @@ class _HomeState extends State<Home> {
                   );
                 }),
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "المزيد",
-                      style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w900),
-                    )),
-                const Text(
-                  "مقترحات لك ",
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.w900),
-                ),
-              ],
-            ),
+         homePageLable(
+          more: "المزيد",
+          deals: "مقتراحات لك",
+          onPressed: (){},
           ),
           Container(
             width: double.maxFinite,
